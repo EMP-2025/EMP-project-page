@@ -52,27 +52,28 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">EMP: Executable Motion Prior for Humanoid Robot Standing Upper-body Motion Imitation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                <a>Anonymous Author</a></span>
+                <!-- <span class="author-block">
+                  <a>Haodong Zhang</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                    <a>Zhenghan Chen</a>,</span>
+                    <span class="author-block">
+                    <a>Rong Xiong</a></span> -->
                   </div>
 
-                  <div class="is-size-5 publication-authors">
+                  <!-- <div class="is-size-5 publication-authors">
                     <span class="author-block">Institution Name<br>Conferance name and year</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+                  </div> -->
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
+                  <!-- <div class="column has-text-centered">
+                    <div class="publication-links"> -->
                          <!-- Arxiv PDF link -->
-                      <span class="link-block">
+                      <!-- <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -80,10 +81,10 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span> -->
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,10 +92,10 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -102,10 +103,10 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -113,7 +114,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -129,12 +130,9 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="video/EMP.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
     </div>
   </div>
 </section>
@@ -148,8 +146,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+          To support humanoid robots in performing manipulation tasks, it is essential 
+          to study stable standing while accommodating upper-body motions. However, the 
+          limited controllable range of humanoid robots in a standing position 
+          affects the stability of the entire body. Thus we introduce a reinforcement learning based framework for humanoid robots to 
+          imitate human upper-body motions while maintaining overall stability. 
+          Our approach begins with 
+          designing a retargeting network that generates a large-scale upper-body motion dataset for training the reinforcement learning (RL) policy, which enables the humanoid robot to track upper-body motion targets, employing domain randomization for enhanced robustness. To avoid exceeding the robot's execution capability and ensure safety and stability, we propose an Executable Motion Prior (EMP) module, which adjusts the input target movements based on the robot’s current state. This adjustment improves 
+          standing stability while minimizing changes to motion amplitude. We 
+          evaluate our framework through simulation and real-world tests, demonstrating its practical applicability.          </p>
         </div>
       </div>
     </div>
@@ -157,110 +162,184 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+<section class="Simulation">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+      <h2 class="title is-3">Simulation </h2>
+        <div class="video-hi">
+          <video poster="" id="light" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="video/hi/light_cut.mp4"
+            type="video/mp4">
+          </video>
+          <video poster="" id="hammer" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="video/hi/hammer_cut.mp4"
             type="video/mp4">
           </video>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
+        <div class="video-nav">
+          <video poster="" id="s9" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="video/s9 (online-video-cutter.com).mp4"
+            type="video/mp4">
+          </video>
+          <video poster="" id="s10" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="video/s10 (online-video-cutter.com).mp4"
             type="video/mp4">
           </video>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+        
+        <style>
+          .video-hi {
+            display: flex;
+            justify-content: space-between; /* 左右分栏 */
+            flex-wrap: wrap; /* 允许换行 */
+          }
+          .video-hi video {
+            width: 48%; /* 两栏宽度，留间隙 */
+            margin-bottom: 20px; /* 底部间距 */
+          }
+          .video-nav {
+            display: flex;
+            justify-content: space-between; /* 左右分栏 */
+            flex-wrap: wrap; /* 允许换行 */
+          }
+          .video-nav video {
+            width: 48%; /* 两栏宽度，留间隙 */
+            margin-bottom: 20px; /* 底部间距 */
+          }
+        </style>
       </div>
+    </div>  
+  </div>
+</section>
+
+<section class="Real-world Deployment">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+      <h2 class="title is-3">Real-world Deployment </h2>
+        <div class="video-hi-real">
+          <video poster="" id="amass-1" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="video/hi/amass/amass-1.mp4"
+            type="video/mp4">
+          </video>
+          <video poster="" id="sim-1" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="video/hi/sim/sim-1.mp4"
+            type="video/mp4">
+          </video>
+          <video poster="" id="real-1" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="video/hi/real/real-1_.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="video-hi-real2">
+          <video poster="" id="amass-2" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="video/hi/amass/amass3/amass3-1.mp4"
+            type="video/mp4">
+          </video>
+          <video poster="" id="sim-2" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="video/hi/sim/sim2/sim2-1.mp4"
+            type="video/mp4">
+          </video>
+          <video poster="" id="real-2" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="video/hi/real/real2-1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        
+        <style>
+          .video-hi-real {
+            display: flex;
+            justify-content: space-between; /* 左右分栏 */
+            flex-wrap: wrap; /* 允许换行 */
+          }
+          .video-hi-real video {
+            width: 33%; /* 两栏宽度，留间隙 */
+            margin-bottom: 20px; /* 底部间距 */
+          }
+          .video-hi-real2 {
+            display: flex;
+            justify-content: space-between; /* 左右分栏 */
+            flex-wrap: wrap; /* 允许换行 */
+          }
+          .video-hi-real2 video {
+            width: 33%; /* 两栏宽度，留间隙 */
+            margin-bottom: 20px; /* 底部间距 */
+          }
+        </style>
+        </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
 
 
 
+<section class="Real-world Application">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+      <h2 class="title is-3">Real-world Application </h2>
+        <div class="video-hi-app">
+          <video poster="" id="wolong" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="video/wolong.mp4"
+            type="video/mp4">
+          </video>
+          <video poster="" id="hello" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="video/hello.mp4"
+            type="video/mp4">
+          </video>
+          <video poster="" id="hello" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="video/woshou.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <style>
+          .video-hi-app {
+            display: flex;
+            justify-content: space-between; /* 左右分栏 */
+            flex-wrap: wrap; /* 允许换行 */
+          }
+          .video-hi-app video {
+            width: 33%; /* 两栏宽度，留间隙 */
+            margin-bottom: 20px; /* 底部间距 */
+          }
+        </style>
+      </div>
+    </div>  
+  </div>
+</section>
 
 
-
+<section class="Retargeting">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+      <h2 class="title is-3">Motion Retargeting </h2>
+          <video poster="" id="light" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="video/tele(1).mp4"
+            type="video/mp4">
+          </video>
+         
+      </div>
+    </div>  
+  </div>
+</section>
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,21 +349,21 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
 
-  <footer class="footer">
+  <!-- <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
@@ -300,7 +379,7 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 <!-- Statcounter tracking code -->
   
