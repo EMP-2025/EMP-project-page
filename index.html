@@ -144,16 +144,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          To support humanoid robots in performing manipulation tasks, it is essential 
-          to study stable standing while accommodating upper-body motions. However, the 
-          limited controllable range of humanoid robots in a standing position 
-          affects the stability of the entire body. Thus we introduce a reinforcement learning based framework for humanoid robots to 
-          imitate human upper-body motions while maintaining overall stability. 
-          Our approach begins with 
-          designing a retargeting network that generates a large-scale upper-body motion dataset for training the reinforcement learning (RL) policy, which enables the humanoid robot to track upper-body motion targets, employing domain randomization for enhanced robustness. To avoid exceeding the robot's execution capability and ensure safety and stability, we propose an Executable Motion Prior (EMP) module, which adjusts the input target movements based on the robot’s current state. This adjustment improves 
-          standing stability while minimizing changes to motion amplitude. We 
-          evaluate our framework through simulation and real-world tests, demonstrating its practical applicability.          </p>
-        </div>
+Achieving stable and accurate imitation of human motions by humanoid robots remains challenging, particularly for tasks requiring firmly standing while executing diverse upper-body movements. While reinforcement learning (RL) offers promise for whole-body motion control, directly tracking upper-body motions often lead to the difficulty in resolving the conflict between stability and similarity. In this paper, we present a RL framework for humanoid robots to stably imitate diverse upper-body motions while standing. Our approach employs a motion retargeting network to translate human motions into humanoid targets. A decoupled RL policy is then trained to control the lower body for standing while tracking upper-body motions. However, large-amplitude motions outside training data may lead to loss of balance. To address this, we introduce an Executable Motion Prior (EMP) network that adjusts potentially unstable actions into more feasible motions while minimizing changes to the intended movement amplitude, enhancing standing robustness without retraining. We evaluate our framework through simulation and real-world tests, demonstrating its practical applicability.        </div>
       </div>
     </div>
   </div>
